@@ -1,11 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Weather App</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="shortcut icon" href="img/weather.png" type="image/x-icon" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="js/app.js" defer></script>
+	</head>
+	<body>
+		<div class="weather-container">
+			<div class="weather-search__container">
+				<input type="text" placeholder="Enter the city name" />
+				<button id="search-button">
+					<img src="img/search.png" class="search-img" />
+				</button>
+			</div>
+			<div class="weather-info__container">
+				<img src="img/rain.png" />
+				<h1>22°C</h1>
+				<h2>Germany</h2>
+				<div class="wind-humidity-info__container">
+					<div class="humidity-container">
+						<img id="humidity-img" src="img/humidity.png" alt="" />
+						<div class="humidity-desc__container">
+							<p id="humidity">50%</p>
+							<p>Humidity</p>
+						</div>
+					</div>
+					<div class="wind-container">
+						<img id="wind-img" src="img/wind.png" />
+						<div class="wind-desc__container">
+							<p id="wind">17 km/h</p>
+							<p>Wind speed</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
