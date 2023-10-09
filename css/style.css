@@ -12,7 +12,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  height: 500px;
+  max-height: 500px;
   width: 90%;
   max-width: 400px;
   padding: 20px 10px;
@@ -24,7 +24,6 @@ body {
 }
 .weather-search__container {
   width: 100%;
-  margin-bottom: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,6 +51,25 @@ body {
 }
 #search-button img {
   width: 50%;
+}
+.error {
+  display: none;
+  color: #fff;
+  font-weight: 500;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.error p {
+  margin-right: 10px;
+}
+.error img {
+  height: 30px;
+  filter: invert(100%);
+}
+.weather-info__container {
+  display: none;
+  margin-top: 30px;
 }
 .weather-info__container h1 {
   color: #fff;
